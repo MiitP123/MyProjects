@@ -12,6 +12,6 @@ int main(){
         cin >> t;
         rate = r/100;
         a = p * (1 + rate * t);
-        cout << "Accrued interest in " << t << " year(s) is " << a - p << endl;
+        cout << "Interest earned in " << t << " year(s) is " << a - p << endl;
         cout << "Your total balance will show " << a << endl;
     }}
