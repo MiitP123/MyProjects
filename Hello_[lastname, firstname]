@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(;;){
+        cout << "Enter your first name >> ";
+        string firstname, lastname;
+        cin >> firstname;
+        cout << "Enter your last name >> ";
+        cin >> lastname;
+        cout << "Hello " << lastname << ", " << firstname << "!" << endl;
+    }
+}
