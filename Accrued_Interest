@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    for (;;) {
+        cout << "Enter Principal amount >> ";
+        float p, r, t, a, rate;
+        cin >> p;
+        cout << "Enter rate >> ";
+        cin >> r;
+        cout << "Enter time in years >> ";
+        cin >> t;
+        rate = r/100;
+        a = p * (1 + rate * t);
+        cout << "Accrued interest in " << t << " year(s) is " << a - p << endl;
+        cout << "Your total balance will show " << a << endl;
+    }}
