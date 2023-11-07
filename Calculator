@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    for (;;){
+        cout << "Enter first integer >> " ;
+        int x,y;
+        cin >> x;
+        cout << "Enter operrand >> ";
+        char operand;
+        cin >> operand;
+        cout << "Enter second integer >> ";
+        cin >> y;
+        
+        
+        if(operand == '+'){
+            cout << x << "+" << y << " = " << x + y << endl;
+        }else if(operand == '-'){
+            cout << x << "-" << y << " = " << x - y << endl;
+        }else if(operand == '*'){
+            cout << x << "*" << y << " = " << x * y << endl;
+
+        }else{
+            cout << x << "/" << y << " = " << x/y << endl;
+
+        }
+    }
+}
