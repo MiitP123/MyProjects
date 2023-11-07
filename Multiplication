@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(;;){
+        cout << "Enter first integer >> ";
+        double a,b,product;
+        cin >> a;
+        cout << "Enter second integer >> ";
+        cin >> b;
+        product = a*b;
+        cout << product << endl;
+    }
+}
