@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    cout << "Enter cardOne >> ";
+        char cardOne, cardTwo;
+        cin >> cardOne;
+        cout << "Enter cardTwo >> ";
+        cin >> cardTwo;
+        
+        int total = 0;
+        if (cardOne == 'A') {
+                total += 11;
+            } else if (cardOne == 'K' || cardOne == 'Q') {
+                total += 10;
+            } else if (cardOne == '1'){
+                total += 1;
+            } else if (cardOne == '2'){
+                total += 2;
+            } else if (cardOne == '3'){
+                total += 3;
+            } else if (cardOne == '4'){
+                total += 4;
+            } else if (cardOne == '5'){
+                total += 5;
+            } else if (cardOne == '6'){
+                total += 6;
+            } else if (cardOne == '7'){
+                total += 7;
+            } else if (cardOne == '8'){
+                total += 8;
+            } else if (cardOne == '9'){
+                total += 9;
+            }
+
+            else {
+                cout << "ERROR!, cardOne: " << cardOne << " undefined" << endl;
+                return 1;
+            }
+        if (cardTwo == 'A') {
+                total += 11;
+            } else if (cardTwo == 'K' || cardTwo == 'Q') {
+                total += 10;
+            } else if (cardTwo == '1'){
+                total += 1;
+            } else if (cardTwo == '2'){
+                total += 2;
+            } else if (cardTwo == '3'){
+                total += 3;
+            } else if (cardTwo == '4'){
+                total += 4;
+            } else if (cardTwo == '5'){
+                total += 5;
+            } else if (cardTwo == '6'){
+                total += 6;
+            } else if (cardTwo == '7'){
+                total += 7;
+            } else if (cardTwo == '8'){
+                total += 8;
+            } else if (cardTwo == '9'){
+                total += 9;
+            }else {
+                cout << "ERROR!, cardTwo: " << cardTwo << " undefined" << endl;
+                return 1;
+            }
+        
+        
+        if((total > 21) && ((cardOne == 'A') || (cardTwo == 'A'))){
+            total -= 10;
+        }
+        if (total == 21) {
+            cout << "21!";
+        } else if (total > 21) {
+            cout << "Bust!";
+        } else {
+            cout << total;
+        }
+        cout << endl;
+        
+        return 0;
+    }
