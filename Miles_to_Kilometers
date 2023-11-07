@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for(;;){
+        cout << "Enter miles >> ";
+        double miles, kilometers;
+        cin >> miles;
+        kilometers = miles * 1.61;
+        cout << miles << " miles is " << kilometers << " kilometers" << endl;
+   
+    }
+}
