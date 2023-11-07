@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    for (;;){
+        cout << "Enter grade >> ";
+        int grade;
+        cin >> grade;
+        
+        if ((grade >= 90) && (grade <= 100)){
+            cout << "Your grade of " << grade << " earned you an A"<< endl;
+        }else if((grade >= 80) && (grade <= 89)){
+            cout << "Your grade of " << grade << " earned you a B"<< endl;
+        }else if((grade >= 70) && (grade <= 79)){
+            cout << "Your grade of " << grade << " earned you a C"<< endl;
+        }else if((grade >= 65) && (grade <= 69)){
+            cout << "Your grade of " << grade << " earned you a D"<< endl;
+        }else if(grade < 65){
+            cout << "Your grade of " << grade << " earned you a F" << endl;
+        }
+    }
+}
